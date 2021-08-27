@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Regression Test" verbose="4" parallel="tests" thread-count="3">
+
+
+	<test name="Amazon Test">
+	    <parameter name="browser" value="chrome" />
+	     <parameter name="url" value="https://www.amazon.co.uk/" />
+		<classes>
+			<class name="runner_concept.AmazonTest" />
+		</classes>
+	</test>
+
+	<test name="Google Test">
+	    <parameter name="browser" value="firefox" />
+	     <parameter name="url" value="https://www.google.co.in/" />
+		<classes>
+			<class name="runner_concept.GoogleTest" />
+		</classes>
+	</test>
+
+	<test name="Facebook Test">
+	    <parameter name="browser" value="edge" />
+	     <parameter name="url" value="https://www.facebook.com/" />
+		<classes>
+			<class name="runner_concept.FacebookTest" />
+		</classes>
+	</test>
+
+
+</suite>
